@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategroyRow: View {
+struct CategoryRow: View {
     var categoryName: String
     var items: [Landmark]
     
@@ -32,7 +32,7 @@ struct CategroyRow: View {
 
 #Preview {
     let landmarks = ModelData().landmarks
-    CategroyRow(
+    CategoryRow(
         categoryName: landmarks[0].category.rawValue,
         items: Array(landmarks.prefix(3))
     )
